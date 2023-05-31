@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <link alt="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">The Big Three</h1>
+      <p id="description"> Help us find the best 3 animes of all time</p>
+    </header>
+    <section>
+      <form id="survey-form">
+        <label id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </label>
+        <label id="email-label">Email
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+        <label id="number-label">Age
+          <input id="number" type="number" min="8" max="120" placeholder="Age"/>
+        </label>
+        <label id="weeb-level"> Which option best describes your weeb level?
+          <select id="dropdown">
+            <option>Select an option</option>
+            <option>Beginner</option>
+            <option>Intermidiate</option>
+            <option>Expert</option>
+          </select>
+        </label>
+        <label id="active">Do you still watch anime?
+          <br>
+          <input type="radio" value="never" name="user-activity" class="inline"/> Never Have
+          <br>
+          <input type="radio" value="cometimes" name="user-activity" class="inline"/> Sometimes
+          <br>
+          <input type="radio" value="often" name="user-activity" class="inline"/> Often
+        </label>
+        <label id="rate">How many hours do you watch anime per week?
+          <select id="dropdown">
+            <option>Select an option</option>
+            <option>Less than an hour</option>
+            <option>2 - 5 hours</option>
+            <option>6 - 11 hours</option>
+            <option>12 - 23 hours</option>
+            <option>More than 24 hours</option>
+          </select>
+        </label> 
+        <label id="anime-choices">What are your top 3 anime?
+          <br>
+          <input type="checkbox" value="1" name="anime-options" class="inline"/> My Hero Acedemia
+          <br>
+          <input type="checkbox" value="2" name="anime-options" class="inline" checked/> One piece
+          <br>
+          <input type="checkbox" value="3" name="anime-options" class="inline"/> Dragon Ball & Dragon Ball Z
+          <br>
+          <input type="checkbox" value="4" name="anime-options" class="inline"/> Pokémon
+          <br>
+          <input type="checkbox" value="5" name="anime-options" class="inline"/> Naruto & Naruto: Shippuden
+          <br>
+          <input type="checkbox" value="6" name="anime-options" class="inline"/> Demon Slayer: Kimetsu no Yaiba
+          <br>
+          <input type="checkbox" value="7" name="anime-options" class="inline"/> Fullmetal Alchemist: Brotherhood
+          <br>
+          <input type="checkbox" value="8" name="anime-options" class="inline"/> Death Note
+        </label>
+        <label id="custom-choice"> If your top 3 anime weren't on the list please include them here
+          <textarea placeholder="Enter your choices here..." rows="10"></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
